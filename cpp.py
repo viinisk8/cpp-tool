@@ -1,36 +1,17 @@
 #cpp.py
 
-import actions
-import sys
+import commands
 
-actions.data.Directory = sys.argv[1]
-Par = ""
-Commands = ["start", "finish", "add", "run"]
-CommandsActions = {
-    "start": actions.start,
-    "finish": actions.finish,
-    "add": actions.add,
-    "run": actions.run
-}
-
-# --------------------------------------------------------------
 def GetCommand():
+    par = input("---> Enter with the command: ")
 
-    #
-    global Par
-    Par = input(actions.data.ProjectName + "  ---> Enter with the command: ").lower()
+    if par in commands.dic:
+        commands.dic[par]()
+        GetCommand()
 
-    #
-    if Par not in Commands:
+    else:
         print("Unknown command")
         GetCommand()
-    else:
-        CommandsActions[Par]()
-        GetCommand()
 
-# --------------------------------------------------------------
-
-### run
+#
 GetCommand()
-
-    
