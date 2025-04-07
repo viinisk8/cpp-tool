@@ -21,24 +21,14 @@ A command-line interface (CLI) tool built with Python to streamline and accelera
 - `run` – Compiles all files using Visual Studio's compiler  
 - `finish` – Exits the program
 
-## ▶️ How to Use
-
-```bash
-python cpp.py '''
-
-## 📁 Project Structure
-
-📦 YourProject
-├── 📁 Build
-├── 📁 Config
-│   ├── 📄 Config.json
-│   ├── 📄 Files.json
-│   └── 📄 Libs.json
-├── 📁 Libs
-├── 📁 Source
-└── 📄 YourProject.cpp
-
 ## ⚙️ Requirements
 - Python 3.x
 - Visual Studio with cl.exe and vcvars64.bat available
 - Python keyboard library (pip install keyboard)
+
+## ▶️ How to Use
+
+```bash
+python cpp.py```
+
+
