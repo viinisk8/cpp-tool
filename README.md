@@ -24,7 +24,7 @@ A command-line interface (CLI) tool built with Python to streamline and accelera
 ## ▶️ How to Use
 
 ```bash
-python cpp.py
+python cpp.py '''
 
 ## 📁 Project Structure
 
